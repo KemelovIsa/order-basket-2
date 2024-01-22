@@ -1,0 +1,84 @@
+img{
+  width: 100px;
+  height: 100px;
+}
+img:hover{
+  width: 95px;
+  height: 98px;
+}
+
+.food {
+  padding: 20px;
+  background: purple;
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+
+  width: 100%;
+  max-width: 330px;
+
+  cursor: pointer;
+}
+
+
+.food h1 {
+  font-size: 20px;
+}
+
+.your_order {
+  width: 100%;
+}
+
+#orderList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product {
+  width: 200px;
+  height: auto;
+  padding: 20px;
+  background: purple;
+  border-radius: 12px;
+  border: 1px solid silver;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body{
+  
+	margin: 0;
+	height: 100vh;
+	color: #fff;
+	font-family: Arial, sans-serif;
+	background: linear-gradient(85deg, rgb(41, 32, 56), purple, #c3c634, purple);
+	background-size: 400% 400%;
+	animation: gradientAnimation 5s infinite;
+	font-family: "Arial", sans-serif;
+	height: 100vh;
+	margin: 0;
+	background-color: #f8f9fa;
+}
+@keyframes gradientAnimation {
+	0% {
+		background-position: 0% 50%;
+	}
+	25% {
+		background-position: 25% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	75% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
