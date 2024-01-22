@@ -3,19 +3,19 @@ import React, { useState } from "react";
 const Menu = ({ menuItems }) => {
 	const [orderBasket, setOrderBasket] = useState([]);
 
-	const pushProduct = (id) => {
-		const existingProduct = orderBasket.find((item) => item.id === id);
+	// const pushProduct = (id) => {
+	// 	const existingProduct = orderBasket.find((item) => item.id === id);
 
-		if (existingProduct) {
-			const newData = menuItems.find((item) => item.id === id);
-			existingProduct.count += 1;
-			existingProduct.price += newData.price;
-		} else {
-			const newData = menuItems.find((item) => item.id === id);
-			const newProduct = { ...newData, count: 1 };
-			setOrderBasket([...orderBasket, newProduct]);
-		}
-	};
+	// 	if (existingProduct) {
+	// 		const newData = menuItems.find((item) => item.id === id);
+	// 		existingProduct.count += 1;
+	// 		existingProduct.price += newData.price;
+	// 	} else {
+	// 		const newData = menuItems.find((item) => item.id === id);
+	// 		const newProduct = { ...newData, count: 1 };
+	// 		setOrderBasket([...orderBasket, newProduct]);
+	// 	}
+	// };
 
 	const deleteProduct = (id, index) => {
 		const updatedBasket = [...orderBasket];
